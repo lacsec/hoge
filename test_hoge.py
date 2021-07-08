@@ -1,9 +1,12 @@
 import unittest
 import hoge
 
-class test0(unittest.):
-  def __init__(self):
-    pass
+class TestMyApp(unittest.TestCase):
   def test(self):
-    pass
+    actual = hoge.my_add(2,3)
+    expected = 5
+    self.assetEqual(expected, actual)
+  
+if __name__ == "__main__":
+  unittest.main()
   
