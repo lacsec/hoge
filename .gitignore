@@ -1,0 +1,4 @@
+# 除外
+.pytest_cache
+*.pyc
+
